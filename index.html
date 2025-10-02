@@ -629,9 +629,9 @@ const pollTelegramMessages = async () => {
                 if (msg.type === 'text') {
                     addMessageToChat(msg.content, false);
                 } else if (msg.type === 'file') {
-                    addMessageToChat( msg.content, false);
+                    addMessageToChat(`${msg.sender} sent: 📎 ${msg.content}`, false);
                 } else if (msg.type === 'photo') {
-                    addMessageToChat( false);
+                    addMessageToChat(`${msg.sender} sent a photo`, false);
                 }
             });
         }
