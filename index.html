@@ -627,11 +627,11 @@ const pollTelegramMessages = async () => {
         if (data.success && data.messages.length > 0) {
             data.messages.forEach(msg => {
                 if (msg.type === 'text') {
-                    addMessageToChat(`${msg.sender}: ${msg.content}`, false);
+                    addMessageToChat(msg.content, false);
                 } else if (msg.type === 'file') {
-                    addMessageToChat(`${msg.sender} sent: 📎 ${msg.content}`, false);
+                    addMessageToChat( msg.content, false);
                 } else if (msg.type === 'photo') {
-                    addMessageToChat(`${msg.sender} sent a photo`, false);
+                    addMessageToChat( false);
                 }
             });
         }
@@ -734,3 +734,7 @@ pollTelegramMessages();
     </script>
 </body>
 </html>
+
+
+
+
