@@ -145,6 +145,7 @@ a{
     font-weight: bold;
     font-size: 1rem;
     color: whitesmoke;
+    color: #daec00;
 }
 .pear{
     margin-top: 1.5rem;
@@ -154,10 +155,10 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #daec00;
+    border: 2px solid #daec00;
     border-radius: 8px;
     overflow: hidden;
-    background: ;
+    background: #fff;
     width: 400px;
 }
 .subscribe input{
@@ -166,15 +167,15 @@ a{
     border: none;
     outline: none;
     background: transparent;
-    color: #fff;
+    color: black;
     font-size: 14px;
     z-index: 1;
 }
 .subscribe:focus-within{
-    border: 1px solid #0d594c;
+    border: 2px solid #0d594c;
 }
 .subscribe input::placeholder{
-    color: #777;
+    color: black;
 }
 .subscribe button{
     background: #daec00;
@@ -292,6 +293,7 @@ a{
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
+    min-height: 80vh;
 }
 #about img{
     max-width: 100%;
@@ -299,9 +301,11 @@ a{
 .text{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1.5rem;
 }
-.text h2{
+.text h1{
     text-align: center;
 }
 
@@ -454,9 +458,9 @@ footer{
     text-decoration: none;
 }
 .footerlink li a{
-    color: black;
+    color: #daec00;
     font-size: 1rem;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 .footer-btn p{
     margin-bottom: 0.8rem;
@@ -770,7 +774,51 @@ body.show-chatbot .chatbot-popup{
     display: block;
 }
 
-
+/* Terms */
+.terms{
+    padding: 1.5rem;
+    padding-top: 6rem;
+    background: linear-gradient(150deg,#0d594c,#daec00);
+}
+.terms-header  h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.terms-address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+.terms-about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 0.7rem;
+}
+.terms-about h2{
+    margin-bottom: 1.5rem;
+}
+.terms-ul{
+    padding-left: 2rem;
+}
+.terms-ul h4{
+    margin-top: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+.terms-ul li{
+    align-items: first baseline;
+    list-style: disc;
+    margin-bottom: 0.6rem;
+}
+/* span{
+    font-weight: bold;
+    font-style: oblique;
+} */
 
 
 @media (min-width: 481px) and (max-width: 768px){
